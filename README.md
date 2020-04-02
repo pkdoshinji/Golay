@@ -9,6 +9,6 @@ If there are never more than 3 errors per 24-bit Golay word (or 1 error per byte
 
 <img src="example1.png" alt="example" width="850" height="400" />
 
-In a more realistic scenario--if, for example, there is a fixed error rate for each transmitted bit--there may be 24-bit Golay words that exceed the 3-error correction limit. In this case, good correction is still possible:
+In a more realistic scenario--if there is a fixed error rate for each transmitted bit, for example--there may be 24-bit Golay words that exceed the 3-error correction limit. In this case, the quality of correction will depend on the error rate. The following example illustrates correction of text transmitted over a channel with a p=0.05 error rate:
 
 <img src="example2.png" alt="example" width="850" height="400" />
