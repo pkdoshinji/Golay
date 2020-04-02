@@ -1,5 +1,5 @@
 # Golay
-Error-correcting codes for transmission of data across a noisy channel
+Error-correcting codes for the transmission of data across a noisy channel
 
 The Golay codes are a family of linear error-correcting codes discovered in 1949 by the Swiss mathematician Marcel J. E. Golay. In addition to their utility in information processing, they play an important role in the mathematics of finite sporadic groups. There are four Golay codes: the binary Golay code (G23), the extended binary Golay code (G24), the ternary Golay code, and the extended ternary Golay code. The binary Golay code and the ternary Golay code are perfect codes, meaning that we can define a metric (specifically, the Hamming metric) on the codespace such that it is possible to partition the codespace with a set of Hamming spheres of a specified radius centered at each permissable codeword. It is this property that makes error-correction possible, as any codespace vector lies within a sphere centered at one (and only one) permissible codeword.
 
