@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+'''
+Golay.py: Golay encoding and decoding for transmission of data across a noisy channel
+Author: Patrick Kelly
+Email: patrickyunen@gmail.com
+Last revised: April 2, 2020
+'''
+
 import random
 
 wordlength = 12
@@ -269,6 +276,7 @@ for i in range(0,len(outbits),8):
     charbits = outbits[i:i+8]
     outchar = chr(int(charbits,2))
     mssg += outchar
+
 # Convert uncorrected message bits to string
 for i in range(0,len(errbits_out),8):
     charbits = errbits_out[i:i+8]
