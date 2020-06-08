@@ -9,6 +9,6 @@ So long as there are never more than 3 errors per 24-bit Golay word (or 1 error 
 
 <img src="example1.png" alt="example" width="850" height="400" />
 
-However, in a realistic scenario there is unlikely to be an absolute cap on errors per 24-bit segment. A better model would assume a fixed error rate, expressed as a probability, for each transmitted bit. In this situation there may be 24-bit Golay words that exceed the 3-error correction limit of the extended Golay code. The quality of correction will then depend on the error rate. The following example illustrates correction of text transmitted over a channel with a p=0.05 error rate:
+However, in a realistic scenario there is unlikely to be an absolute cap on errors per 24-bit segment. A better model is "white noise," which assumes a fixed error rate, expressed as a probability, for each transmitted bit. In this situation there may be 24-bit Golay words that exceed the 3-error correction limit of the extended Golay code. The quality of correction will then depend on the error rate. The following example illustrates correction of text transmitted over a channel with a p=0.05 error rate:
 
 <img src="example2.png" alt="example" width="850" height="400" />
