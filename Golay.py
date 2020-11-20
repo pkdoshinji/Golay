@@ -111,13 +111,13 @@ def string_from_vector(vector):
 
 # Return filename as a bitstream string
 def get_bitstream(filename):
-    fh = open(filename)
-    text = fh.read()
-    bitstream = ''
-    for char in text:
-        ascii = ord(char)
-        binary = '{0:08b}'.format(ascii)
-        bitstream += binary
+    with open(filename, 'rb') as fh:
+        bytestream = fh.read()
+        bitstream = ''
+        for byte in bytestream:
+        #     ascii = ord(char)
+            binary = '{0:08b}'.format(byte)
+            bitstream += binary
     return bitstream
 
 
@@ -159,7 +159,7 @@ Ht = transpose(conjoin(B,I))
 '''Encoding'''
 
 # bitstream = get_bitstream('gettysburgh.txt')
-bitstream = get_bitstream('gettysburgh.txt')
+bitstream = get_bitstream('flower.png')
 padstream = padder(bitstream)
 
 # Initialize string for encoded data
